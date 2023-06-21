@@ -1,0 +1,381 @@
+:root {
+  --primary-color-1: rgb(120, 87, 255);
+  --primary-color-2: rgb(46, 43, 233);
+  --secondary-font: rgb(200, 199, 255);
+  --primary-font: rgb(48, 59, 90);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: hanken grotesk;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Top Container Starts here  */
+
+h1, h2, h3, p {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.main {
+  box-shadow: 0 50px 100px rgba(200, 199, 255, 0.8);
+
+}
+
+.container-left {
+  text-align: center;
+  background-image: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+  color: white;
+  margin: 0;
+  padding-bottom: 40px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 35px;
+}
+
+.main-content {
+  position: relative;
+}
+
+.main-content .dot {
+  height: 135px;
+  width: 135px;
+  background-image: linear-gradient(to top, rgba(120, 87, 255, 0.1), rgba(39, 36, 197, 0.8));  
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-left .result {
+  color: var(--secondary-font);
+  margin-bottom: 50px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.main-content h1 {
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.main-content p{
+  font-size: 15px;
+  color: var(--secondary-font);
+}
+
+.heading {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.para {
+  margin-inline: 50px;
+  color: var(--secondary-font);
+  font-size: 15.5px;
+}
+
+/* Top Container Ends here  */
+
+
+/* Bottom Container Starts here  */
+
+.container-right {
+  margin-inline: 30px;
+}
+
+.container-right h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-font);
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.subjects {
+  margin-inline: 5px;
+  margin-bottom: 60px;
+}
+
+
+.subjects h4 {
+  margin-block: 18px;
+  font-size: 15px;
+}
+
+/* reaction block starts here  */
+
+.reaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 87, 87, 0.050);
+  padding: 0 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.R-left {
+  display: flex;
+}
+
+.R-left h3 {
+  margin-left: 10px;
+  font-size: 15px;
+  color: rgb(255, 87, 87);
+}
+
+/* reaction block ends here  */
+
+/* memory block starts here  */
+
+.memory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 176, 31, 0.050);
+  padding: 0 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.M-left {
+  display: flex;
+}
+
+.M-left h3 {
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgb(255, 176, 31);
+}
+
+/* memory block ends here  */
+
+/* verbal block starts here  */
+
+.verbal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 189, 145, 0.050);
+  padding: 0 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.V-left {
+  display: flex;
+}
+
+.V-left h3 {
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgb(0, 189, 145);
+}
+
+/* verbal block ends here  */
+
+/* Visual block starts here  */
+
+.visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(17, 37, 212, 0.050);
+  padding: 0 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.Vi-left {
+  display: flex;
+}
+
+.Vi-left h3 {
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgb(17, 37, 212);
+}
+
+/* visual block ends here  */
+
+
+.btn {
+  text-align: center;
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 16px 110px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 1440px) {
+
+/* Top Container Starts here  */
+  
+
+  .main {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .container-left {
+    border-radius: 30px;
+    max-width: 450px;
+  }
+
+  .container-left .result {
+    margin-bottom: 85px;
+    padding-top: 40px;
+    font-size: 25px;
+  }
+
+  .main-content .dot {
+    height: 210px;
+    width: 210px;
+  
+  }
+
+  .main-content h1 {
+    font-size: 80px;
+  }
+  
+  .main-content p{
+    font-size: 18px;
+    opacity: 0.7;
+    position: relative;
+    bottom: 8px;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin-top: 70px;
+    margin-bottom: 14px;
+  }
+  
+  .para {
+    margin-inline: 45px;
+    color: var(--secondary-font);
+    font-size: 19px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  
+  /* Top Container Ends here  */
+
+
+  /* Bottom Container Starts here  */
+
+.container-right {
+  padding-left: 0px;
+}
+
+.container-right h2 {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--primary-font);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.subjects {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+
+.subjects h4 {
+  font-size: 19px;
+}
+
+.subjects img {
+  width: 25px;
+}
+
+/* reaction block starts here  */
+
+.reaction {
+  margin-bottom: 15px;
+}
+
+
+.R-left h3 {
+  font-size: 18px;
+}
+
+/* reaction block ends here  */
+
+/* memory block starts here  */
+
+.memory {
+  margin-bottom: 15px;
+}
+
+
+.M-left h3 {
+  font-size: 19px;
+}
+
+/* memory block ends here  */
+
+/* verbal block starts here  */
+
+.verbal {
+  margin-bottom: 15px;
+}
+
+.V-left h3 {
+  font-size: 19px;
+}
+
+/* verbal block ends here  */
+
+/* Visual block starts here  */
+
+.visual {
+  margin-bottom: 15px;
+}
+
+.Vi-left h3 {
+  font-size: 19px;
+}
+
+/* visual block ends here  */
+
+
+
+button {
+  font-size: 17px;
+  padding: 19px 110px;
+  margin-top: 30px;
+}
+
+}
+
+/* 1440 resposive ends here  */
+
+/* ACTIVE STATUS STARS HERE  */
+
+button:hover {
+  background-color: var(--primary-color-2);
+  cursor: pointer;
+}
+
